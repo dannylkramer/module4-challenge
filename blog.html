@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Blog - Posts</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
 </head>
-
-<body id="posts">
-  <header>
-    <h1>Personal Blog</h1>
-    <div class="toggle-container">
-      <label for="dark-mode">Dark Mode</label>
-      <input type="checkbox" id="dark-mode">
-    </div>
-    <button id="back-btn">Back</button>
-  </header>
-  <main>
-    <h2>Your Posts</h2>
-    <ul id="posts-list"></ul>
-  </main>
-  <footer>
-    <a href="#">Developer Portfolio</a>
-  </footer>
-  <script src="assets/js/logic.js"></script>
+<body>
+    <header>
+        <h1>Blog Posts</h1>
+        <button id="toggleMode">Toggle Light/Dark Mode</button>
+    </header>
+    <main>
+        <button id="backButton">Back</button>
+        <div id="posts"></div>
+    </main>
+    <footer>
+        <a href="https://portfolio-link.com">Developer's Portfolio</a>
+    </footer>
+    <script src="assets/js/logic.js"></script>
+    <script src="assets/js/blog.js"></script>
 </body>
 </html>
+
