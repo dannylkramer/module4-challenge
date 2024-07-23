@@ -1,70 +1,25 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  #landing {
-    text-align: center;
-  }
-  
-  #error-message {
-    color: red;
-  }
-  
-  #posts {
-    background-color: #f0f0f0; /* Light mode default */
-  }
-  
-  #posts.dark-mode {
-    background-color: #222;
-    color: #fff;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  #posts-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .post-item {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .post-item h3, .post-item p {
-    margin: 5px 0;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-  }
-  
-  a {
-    color: #000;
-    text-decoration: none;
-  }
-  
-  /* Toggle Styling (Optional) */
-  
-  .toggle-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  #dark-mode {
-    margin-right: 5px;
-  }
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  margin: 20px;
+}
+
+/* Light and Dark mode variables */
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+}
